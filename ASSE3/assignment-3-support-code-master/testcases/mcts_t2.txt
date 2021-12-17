@@ -1,0 +1,18 @@
+t_success_prob: 0.9
+gamma: 0.95
+epsilon: 0.001
+move_cost: -1
+collision_cost: -5
+game_over_cost: -15
+goal_reward: 0
+method: mcts
+benchmark: -18
+time_limit: 20
+initial_seed: 23
+#######
+#D  FW#
+#   WW#
+#  #WW#
+#   WW#
+#2 ^ W#
+#######

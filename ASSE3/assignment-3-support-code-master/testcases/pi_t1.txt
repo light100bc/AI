@@ -1,0 +1,31 @@
+t_success_prob: 0.85
+gamma: 0.95
+epsilon: 0.001
+move_cost: -1
+collision_cost: -2
+game_over_cost: -40
+goal_reward: 0
+method: pi
+benchmark: -49
+time_limit: 5
+initial_seed: 29
+####################
+####     II     ####
+###    IIII###   ###
+##    WIIIIW      ##
+##    WIIII   ###  #
+##   WWW II##     ##
+#>    ## II##     ##
+##   ### ##### #####
+#  ##### #      #  #
+# I#T #  # ###  #  #
+#WI## ##       ## F#
+#WI#   #######     #
+#WI###            W#
+#W   ###    ##   IW#
+#W   ##########  IW#
+#W   #   ########IW#
+#W ###   ###T   #IW#
+#W III   III      W#
+#WWWWWWWWWWWWWWWWWW#
+####################

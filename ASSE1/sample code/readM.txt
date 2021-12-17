@@ -1,0 +1,7 @@
+solver4:加入 两个list，一前一后，dir用在explore时入list
+solver4_dir:加入 两个list，一前一后，dir用在入frontier时入list
+solver5：老师方法，explore时入list，不更新value （需要get next action）
+
+自己的list，限制同一cell 做两次无效动作
+dir list，放frontier处，防止frontier与explore内重复
+          放explore处，防止与explore内重复

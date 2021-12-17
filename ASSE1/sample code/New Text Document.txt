@@ -1,0 +1,3 @@
+t2_shortcut  378 413 857:'b' 
+t2_brickyard 480 682 1154:'b' 
+t1_ice_maze 58 75 149:'b' 73 117 269

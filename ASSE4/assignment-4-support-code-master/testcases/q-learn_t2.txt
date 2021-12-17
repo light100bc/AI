@@ -1,0 +1,13 @@
+gamma: 0.95
+method: q-learning
+benchmark: -36
+time_limit: 30
+initial_seed: 3012
+########
+##    F#
+#  ##  #
+##  # W#
+#  ## W#
+#  #  W#
+## ^ ###
+########

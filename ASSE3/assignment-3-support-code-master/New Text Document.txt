@@ -1,0 +1,43 @@
+       while (abs(max_delta) >= epsilon and current-start<=self.game_map.time_limit):
+            count=count+1
+            current = time.time()
+            print("time: ",current - start,"max_delta: ",max_delta," count: ",count)
+            max_delta = -math.inf
+            for j in range(1, self.game_map.y_size - 1):
+                for k in range(1, self.game_map.x_size - 1):
+                    for i in LaserTankMap.DIRECTIONS:
+                        if (self.game_map.grid_data[j][k] == LaserTankMap.LAND_SYMBOL
+                                or self.game_map.grid_data[j][k] == LaserTankMap.TELEPORT_SYMBOL
+                                or self.game_map.grid_data[j][k] == LaserTankMap.ICE_SYMBOL):
+                            self.game_map.player_x = j
+                            self.game_map.player_y = k
+                            self.player_heading = i
+                            current_value = values[k-1][j-1][i]
+                            max_value = -math.inf  # choose the action result in the max V value
+                            for a in LaserTankMap.MOVES:  # do an action, NO SHOT!
+                                if (a == 's'): continue
+                                elif (a == 'l'):
+
+				    # todo: V-value after turn left
+                                    estimate_value = 0
+                                    if (max_value < estimate_value):
+                                        max_policy = 'l'
+                                        max_value = estimate_value
+                                elif (a == 'r'):
+                                    # todo: V-value after turn right
+                                    estimate_value = 0
+                                    if (max_value < estimate_value):
+                                        max_policy = 'r'
+                                        max_value = estimate_value
+                                else:  # move forward
+                                    
+                                    estimate_value = 0
+                                    #all the move done on estimate map
+                                    #6 s'
+                                    # todo: V-value after go forward
+                                    if (max_value < estimate_value):
+                                        max_policy = 'f'
+                                        max_value = estimate_value
+                            values[k-1][j-1][i] = max_value
+                            policy[k-1][j-1][i] = max_policy
+                            max_delta = max(max_delta, max_value - current_value)

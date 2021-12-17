@@ -1,0 +1,25 @@
+t_success_prob: 0.9
+gamma: 0.95
+epsilon: 0.001
+move_cost: -1
+collision_cost: -2
+game_over_cost: -35
+goal_reward: 0
+method: vi
+benchmark: -46
+time_limit: 5
+initial_seed: 44
+############
+#> #   #   #
+#    # #   #
+#W   #   # #
+#WW WW   # #
+#WW WWW##  #
+#WW WWW    #
+#WW WWW   ##
+#WW WWW    #
+#WW WWW##  #
+#WW W   #  #
+#WW        #
+#WWW F#    #
+############

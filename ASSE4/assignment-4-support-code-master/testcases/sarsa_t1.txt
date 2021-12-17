@@ -1,0 +1,11 @@
+gamma: 0.95
+method: sarsa
+benchmark: 0
+time_limit: 20
+initial_seed: 41
+#######
+#   FW#
+# ## W#
+#  #KW#
+# ^  W#
+#######
